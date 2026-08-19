@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquire &amp; Book — Zenala Lake Event Centre</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html" aria-label="Zenala home">
+      <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="49" fill="#15140F"/>
+        <path d="M18,56 C28,36 38,72 50,52 C62,32 72,68 82,48" stroke="#F5F0E4" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+        <path d="M24,66 C33,49 44,80 55,62" stroke="#AD8A44" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.9"/>
+      </svg>
+      <span>
+        <span class="brand-word">ZENALA</span>
+        <span class="brand-sub">LAKE EVENT CENTRE</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="btn btn-line nav-cta" href="enquire.html" aria-current="page">Enquire</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero compact">
+    <div class="hero-scene" aria-hidden="true">
+      <svg viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,90 C220,64 380,106 620,86 C860,66 1000,100 1200,80 C1320,70 1400,76 1440,80 L1440,180 L0,180 Z" fill="#4B6357" opacity="0.9"/>
+        <path d="M0,118 C240,98 420,130 660,112 C900,94 1080,124 1440,108 L1440,180 L0,180 Z" fill="#1E3129"/>
+      </svg>
+    </div>
+    <div class="hero-inner">
+      <span class="eyebrow">Enquire &amp; Book</span>
+      <h1 class="h1" style="font-size:clamp(38px,5.5vw,60px); margin-top:18px;">Begin your enquiry.</h1>
+      <p class="lede" style="max-width:52ch;">Tell us about your occasion and we'll follow up with availability, pricing, and a walkthrough of the grounds.</p>
+    </div>
+  </section>
+
+  <section class="section section-paper">
+    <div class="wrap">
+      <div class="grid-2" style="align-items:start; gap:clamp(30px,5vw,90px);">
+        <form onsubmit="return false;">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Ama Boateng" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="+233 24 000 0000" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@email.com" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="type">Event Type</label>
+              <select id="type">
+                <option>Wedding</option>
+                <option>Funeral</option>
+                <option>Corporate Getaway</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date">
+            </div>
+          </div>
+          <div class="field">
+            <label for="guests">Estimated Guest Count</label>
+            <input type="number" id="guests" placeholder="e.g. 150">
+          </div>
+          <div class="field">
+            <label for="message">Tell Us About Your Occasion</label>
+            <textarea id="message" placeholder="Share any details that would help us prepare — timing, style, special requests..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; padding:17px;">Submit Enquiry</button>
+        </form>
+
+        <div>
+          <span class="eyebrow">What Happens Next</span>
+          <div class="mt-32">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div>
+                <h4>We confirm availability</h4>
+                <p>Our team checks your date against the grounds calendar, usually within one business day.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div>
+                <h4>We walk you through the space</h4>
+                <p>In person or over a call — whichever suits — covering layout, capacity, and pricing for your occasion.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div>
+                <h4>We hold your date</h4>
+                <p>A deposit secures the booking, and we begin planning the details with you from there.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hr mt-48" style="margin-bottom:28px;"></div>
+
+          <span class="eyebrow">Prefer to Reach Us Directly?</span>
+          <p class="lede mt-16">Call or message us and we'll respond the same day.</p>
+          <p class="mt-16" style="font-family:var(--display); font-size:20px;">+233 24 000 0000</p>
+          <p class="muted">hello@zenalalake.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <span class="brand-word">ZENALA</span>
+      <p>A lakeside event centre for weddings, funerals, and corporate getaways.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="about.html">About Zenala</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Plan</h4>
+      <ul>
+        <li><a href="enquire.html">Enquire &amp; Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <ul>
+        <li><a href="#">Instagram — @zenalalake</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; 2026 Zenala Lake Event Centre. All rights reserved.</span>
+    <span>Lakeside Grounds, Ghana</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
