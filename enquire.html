@@ -1,171 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enquire &amp; Book — Zenala Lake Event Centre</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquire — Zenala Lake Event Centre</title>
+  <meta name="description" content="Check date availability and enquire to hold Zenala for a wedding, funeral, or corporate getaway.">
+  <meta property="og:image" content="images/hero.jpg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <nav class="nav">
-    <a class="brand" href="index.html" aria-label="Zenala home">
-      <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="49" fill="#15140F"/>
-        <path d="M18,56 C28,36 38,72 50,52 C62,32 72,68 82,48" stroke="#F5F0E4" stroke-width="3.2" fill="none" stroke-linecap="round"/>
-        <path d="M24,66 C33,49 44,80 55,62" stroke="#AD8A44" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.9"/>
-      </svg>
-      <span>
-        <span class="brand-word">ZENALA</span>
-        <span class="brand-sub">LAKE EVENT CENTRE</span>
-      </span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <a class="brand" href="index.html" aria-label="Zenala home"><svg class="brand-mark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="49" fill="#1a1914"/><path d="M18,56 C28,36 38,72 50,52 C62,32 72,68 82,48" stroke="#F4EFE4" stroke-width="3.2" fill="none"/></svg>
+      <span><span class="brand-word">ZENALA</span><span class="brand-sub">LAKE EVENT CENTRE</span></span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="events.html">Events</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a class="btn btn-line nav-cta" href="enquire.html" aria-current="page">Enquire</a></li>
+      <li><a class="nav-cta" href="enquire.html" aria-current="page">Enquire</a></li>
     </ul>
   </nav>
 </header>
-
-<main>
+<main id="main">
   <section class="hero compact">
-    <div class="hero-scene" aria-hidden="true">
-      <svg viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,90 C220,64 380,106 620,86 C860,66 1000,100 1200,80 C1320,70 1400,76 1440,80 L1440,180 L0,180 Z" fill="#4B6357" opacity="0.9"/>
-        <path d="M0,118 C240,98 420,130 660,112 C900,94 1080,124 1440,108 L1440,180 L0,180 Z" fill="#1E3129"/>
-      </svg>
-    </div>
+    <div class="hero-media"><img src="images/pavilion.jpg" alt="Dining pavilion at dusk"></div>
     <div class="hero-inner">
-      <span class="eyebrow">Enquire &amp; Book</span>
-      <h1 class="h1" style="font-size:clamp(38px,5.5vw,60px); margin-top:18px;">Begin your enquiry.</h1>
-      <p class="lede" style="max-width:52ch;">Tell us about your occasion and we'll follow up with availability, pricing, and a walkthrough of the grounds.</p>
+      <span class="eyebrow">Enquire</span>
+      <h1>Begin with a date and a sentence.</h1>
     </div>
   </section>
-
-  <section class="section section-paper">
-    <div class="wrap">
-      <div class="grid-2" style="align-items:start; gap:clamp(30px,5vw,90px);">
-        <form onsubmit="return false;">
+  <section class="section">
+    <div class="wrap grid-2" style="align-items:start">
+      <div>
+        <form id="enquire-form">
+          <div class="field-row">
+            <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required placeholder="Ama Boateng"></div>
+            <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+233 …"></div>
+          </div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
           <div class="field-row">
             <div class="field">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" placeholder="Ama Boateng" required>
-            </div>
-            <div class="field">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" placeholder="+233 24 000 0000" required>
-            </div>
-          </div>
-          <div class="field">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="you@email.com" required>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="type">Event Type</label>
-              <select id="type">
+              <label for="type">Occasion</label>
+              <select id="type" name="type">
                 <option>Wedding</option>
                 <option>Funeral</option>
-                <option>Corporate Getaway</option>
+                <option>Corporate getaway</option>
                 <option>Other</option>
               </select>
             </div>
-            <div class="field">
-              <label for="date">Preferred Date</label>
-              <input type="date" id="date">
-            </div>
+            <div class="field"><label for="guests">Guest count</label><input id="guests" name="guests" type="number" min="1" placeholder="150"></div>
           </div>
           <div class="field">
-            <label for="guests">Estimated Guest Count</label>
-            <input type="number" id="guests" placeholder="e.g. 150">
+            <label for="date">Preferred date</label>
+            <input id="date" name="date" type="date" min="2026-08-19">
+            <p id="date-status" class="note">Pick an open day on the calendar. Struck-through dates are already held.</p>
           </div>
-          <div class="field">
-            <label for="message">Tell Us About Your Occasion</label>
-            <textarea id="message" placeholder="Share any details that would help us prepare — timing, style, special requests..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%; padding:17px;">Submit Enquiry</button>
+          <div class="field"><label for="message">Anything we should know</label><textarea id="message" name="message" placeholder="Timing, style, questions…"></textarea></div>
+          <button class="btn btn-primary" type="submit" style="width:100%">Send enquiry</button>
         </form>
-
-        <div>
-          <span class="eyebrow">What Happens Next</span>
-          <div class="mt-32">
-            <div class="step">
-              <div class="step-num">1</div>
-              <div>
-                <h4>We confirm availability</h4>
-                <p>Our team checks your date against the grounds calendar, usually within one business day.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-num">2</div>
-              <div>
-                <h4>We walk you through the space</h4>
-                <p>In person or over a call — whichever suits — covering layout, capacity, and pricing for your occasion.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-num">3</div>
-              <div>
-                <h4>We hold your date</h4>
-                <p>A deposit secures the booking, and we begin planning the details with you from there.</p>
-              </div>
-            </div>
+        <div id="form-ok" class="form-ok">
+          <h2 class="h2">Thank you, <span data-name></span>.</h2>
+          <p class="lede mt-16">Ama has your note. She replies within one business day. If the date is close, send the same details on WhatsApp so nothing sits in a queue.</p>
+          <a class="btn btn-primary mt-24" data-wa href="https://wa.me/233240000000" target="_blank" rel="noopener">Continue on WhatsApp</a>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">Availability</span>
+        <h2 class="h2 mt-16" style="font-size:32px">Grounds calendar</h2>
+        <div id="calendar" class="cal mt-24"></div>
+        <div class="mt-32">
+          <span class="eyebrow">What happens next</span>
+          <div class="mt-24">
+            <div class="step"><div class="step-n">1</div><div><h3>We check the calendar</h3><p class="lede">Usually the same day.</p></div></div>
+            <div class="step"><div class="step-n">2</div><div><h3>We walk the space</h3><p class="lede">In person or on a call — layout, capacity, pricing.</p></div></div>
+            <div class="step"><div class="step-n">3</div><div><h3>We hold the date</h3><p class="lede">A deposit books the grounds. Planning starts there.</p></div></div>
           </div>
-
-          <div class="hr mt-48" style="margin-bottom:28px;"></div>
-
-          <span class="eyebrow">Prefer to Reach Us Directly?</span>
-          <p class="lede mt-16">Call or message us and we'll respond the same day.</p>
-          <p class="mt-16" style="font-family:var(--display); font-size:20px;">+233 24 000 0000</p>
-          <p class="muted">hello@zenalalake.com</p>
         </div>
       </div>
     </div>
   </section>
 </main>
-
 <footer class="site-footer">
   <div class="wrap footer-top">
-    <div class="footer-brand">
-      <span class="brand-word">ZENALA</span>
-      <p>A lakeside event centre for weddings, funerals, and corporate getaways.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="about.html">About Zenala</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Plan</h4>
-      <ul>
-        <li><a href="enquire.html">Enquire &amp; Book</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Follow</h4>
-      <ul>
-        <li><a href="#">Instagram — @zenalalake</a></li>
-      </ul>
-    </div>
+    <div class="footer-brand"><span class="brand-word">ZENALA</span><p>Lakeside grounds for the days that stay with you.</p></div>
+    <div class="footer-col"><h4>Plan</h4><ul><li><a href="enquire.html">Enquire</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Visit</h4><ul><li>Accra Region</li><li><a href="tel:+233240000000">+233 24 000 0000</a></li></ul></div>
+    <div class="footer-col"><h4>Hours</h4><ul><li>Tours Tue–Sun, 9–5</li></ul></div>
   </div>
-  <div class="wrap footer-bottom">
-    <span>&copy; 2026 Zenala Lake Event Centre. All rights reserved.</span>
-    <span>Lakeside Grounds, Ghana</span>
-  </div>
+  <div class="wrap footer-bottom"><span>© 2026 Zenala Lake Event Centre</span></div>
 </footer>
-
+<a class="float-wa" href="https://wa.me/233240000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 11.5A8.5 8.5 0 0 1 7.4 18.7L4 20l1.4-3.3A8.5 8.5 0 1 1 20 11.5Z"/></svg></a>
 <script src="script.js"></script>
 </body>
 </html>

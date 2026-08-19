@@ -1,188 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery — Zenala Lake Event Centre</title>
-<link rel="stylesheet" href="styles.css">
-<style>
-  .masonry{ display:grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
-  .masonry .scene:nth-child(1){ grid-column: span 2; aspect-ratio: 16/9; }
-  .masonry .scene:nth-child(4){ grid-column: span 2; aspect-ratio: 16/9; }
-  @media (max-width: 860px){
-    .masonry{ grid-template-columns: 1fr 1fr; }
-    .masonry .scene:nth-child(1), .masonry .scene:nth-child(4){ grid-column: span 2; }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Zenala</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <header class="site-header">
   <nav class="nav">
-    <a class="brand" href="index.html" aria-label="Zenala home">
-      <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="49" fill="#15140F"/>
-        <path d="M18,56 C28,36 38,72 50,52 C62,32 72,68 82,48" stroke="#F5F0E4" stroke-width="3.2" fill="none" stroke-linecap="round"/>
-        <path d="M24,66 C33,49 44,80 55,62" stroke="#AD8A44" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.9"/>
-      </svg>
-      <span>
-        <span class="brand-word">ZENALA</span>
-        <span class="brand-sub">LAKE EVENT CENTRE</span>
-      </span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="49" fill="#1a1914"/><path d="M18,56 C28,36 38,72 50,52 C62,32 72,68 82,48" stroke="#F4EFE4" stroke-width="3.2" fill="none"/></svg>
+      <span><span class="brand-word">ZENALA</span><span class="brand-sub">LAKE EVENT CENTRE</span></span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="events.html">Events</a></li>
       <li><a href="gallery.html" aria-current="page">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a class="btn btn-line nav-cta" href="enquire.html">Enquire</a></li>
+      <li><a class="nav-cta" href="enquire.html">Enquire</a></li>
     </ul>
   </nav>
 </header>
-
 <main>
   <section class="hero compact">
-    <div class="hero-scene" aria-hidden="true">
-      <svg viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,90 C220,64 380,106 620,86 C860,66 1000,100 1200,80 C1320,70 1400,76 1440,80 L1440,180 L0,180 Z" fill="#4B6357" opacity="0.9"/>
-        <path d="M0,118 C240,98 420,130 660,112 C900,94 1080,124 1440,108 L1440,180 L0,180 Z" fill="#1E3129"/>
-      </svg>
-    </div>
+    <div class="hero-media"><img src="images/sunrise.jpg" alt=""></div>
     <div class="hero-inner">
       <span class="eyebrow">Gallery</span>
-      <h1 class="h1" style="font-size:clamp(38px,5.5vw,60px); margin-top:18px;">A look around Zenala.</h1>
-      <p class="lede" style="max-width:52ch;">A preview of the grounds while our full photography is being scheduled — styled to give a true sense of the setting.</p>
+      <h1>A look around Zenala.</h1>
+      <p class="lede">Click any photograph to open it. These are studies of the grounds as they sit today.</p>
     </div>
   </section>
-
-  <section class="section section-paper">
-    <div class="wrap">
-      <div class="masonry">
-        <div class="scene">
-          <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="225" fill="#263D33"/>
-            <rect width="400" height="90" y="135" fill="#1B2B24"/>
-            <g stroke="#F5F0E4" stroke-opacity="0.35" stroke-width="1.2" fill="none">
-              <line x1="70" y1="135" x2="70" y2="225"/>
-              <line x1="330" y1="135" x2="330" y2="225"/>
-              <path d="M0,150 C90,140 150,160 240,148 C310,140 350,156 400,146" stroke-opacity="0.22"/>
-            </g>
-          </svg>
-          <span class="scene-caption">The Lake Deck</span>
-        </div>
-        <div class="scene">
-          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#4B6357"/>
-            <rect width="400" height="130" y="170" fill="#263D33"/>
-            <path d="M170,300 L170,170 L230,170 L230,300" stroke="#D9C393" stroke-width="1.6" fill="none"/>
-            <path d="M170,170 Q200,130 230,170" stroke="#D9C393" stroke-width="1.6" fill="none"/>
-          </svg>
-          <span class="scene-caption">The Ceremony Lawn</span>
-        </div>
-        <div class="scene">
-          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#324A3E"/>
-            <g stroke="#F5F0E4" stroke-opacity="0.4" stroke-width="1.3" fill="none">
-              <path d="M140,190 C140,165 165,150 165,120 C165,150 190,165 190,190"/>
-              <path d="M210,200 C210,178 232,166 232,140 C232,166 254,178 254,200"/>
-            </g>
-          </svg>
-          <span class="scene-caption">The Gardens</span>
-        </div>
-        <div class="scene">
-          <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="225" fill="#15140F"/>
-            <circle cx="335" cy="52" r="24" fill="#D9C393" opacity="0.9"/>
-            <g stroke="#F5F0E4" stroke-opacity="0.28" fill="none">
-              <path d="M0,150 C90,138 150,160 240,148 C310,140 350,156 400,146"/>
-              <path d="M0,175 C100,163 170,185 260,173 C320,165 360,179 400,171"/>
-            </g>
-          </svg>
-          <span class="scene-caption">Evening by the Water</span>
-        </div>
-        <div class="scene">
-          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" fill="#263D33"/>
-            <rect width="400" height="120" y="180" fill="#1E3129"/>
-            <g stroke="#F5F0E4" stroke-width="1.3" opacity="0.85">
-              <line x1="40" y1="180" x2="360" y2="180"/>
-              <circle cx="90" cy="180" r="4" fill="#D9C393" stroke="none"/>
-              <circle cx="180" cy="180" r="4" fill="#D9C393" stroke="none"/>
-              <circle cx="270" cy="180" r="4" fill="#D9C393" stroke="none"/>
-              <circle cx="340" cy="180" r="4" fill="#D9C393" stroke="none"/>
-            </g>
-          </svg>
-          <span class="scene-caption">The Dining Pavilion</span>
-        </div>
-        <div class="scene">
-          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="sunrise" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#D9C393"/>
-                <stop offset="100%" stop-color="#4B6357"/>
-              </linearGradient>
-            </defs>
-            <rect width="400" height="300" fill="url(#sunrise)"/>
-            <circle cx="200" cy="210" r="46" fill="#F5F0E4" opacity="0.85"/>
-            <rect y="230" width="400" height="70" fill="#263D33"/>
-          </svg>
-          <span class="scene-caption">Sunrise Terrace</span>
-        </div>
-      </div>
-
-      <p class="muted center mt-48" style="max-width:52ch; margin-left:auto; margin-right:auto;">Full photography of the grounds is being scheduled now and will replace these preview panels ahead of launch.</p>
-    </div>
-  </section>
-
-  <section class="section-dark">
-    <div class="wrap center" style="padding:20px 0 10px;">
-      <h2 class="h2" style="font-size:clamp(26px,3.4vw,40px); color:var(--paper);">See it in person.</h2>
-      <div class="hero-actions" style="justify-content:center; margin-top:28px;">
-        <a href="enquire.html" class="btn btn-primary" style="background:var(--gold-deep); border-color:var(--gold-deep);">Book a Visit</a>
-        <a href="contact.html" class="btn btn-ghost">Get Directions</a>
-      </div>
+  <section class="section">
+    <div class="wrap masonry">
+      <figure class="photo" data-full="images/deck.jpg"><img src="images/deck.jpg" alt="Lake deck"><figcaption>The lake deck</figcaption></figure>
+      <figure class="photo" data-full="images/lawn.jpg"><img src="images/lawn.jpg" alt="Lawn"><figcaption>Ceremony lawn</figcaption></figure>
+      <figure class="photo" data-full="images/gardens.jpg"><img src="images/gardens.jpg" alt="Gardens"><figcaption>The gardens</figcaption></figure>
+      <figure class="photo" data-full="images/evening.jpg"><img src="images/evening.jpg" alt="Evening"><figcaption>Evening by the water</figcaption></figure>
+      <figure class="photo" data-full="images/pavilion.jpg"><img src="images/pavilion.jpg" alt="Pavilion"><figcaption>Dining pavilion</figcaption></figure>
+      <figure class="photo" data-full="images/sunrise.jpg"><img src="images/sunrise.jpg" alt="Sunrise"><figcaption>Sunrise terrace</figcaption></figure>
     </div>
   </section>
 </main>
-
-<footer class="site-footer">
-  <div class="wrap footer-top">
-    <div class="footer-brand">
-      <span class="brand-word">ZENALA</span>
-      <p>A lakeside event centre for weddings, funerals, and corporate getaways.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="about.html">About Zenala</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Plan</h4>
-      <ul>
-        <li><a href="enquire.html">Enquire &amp; Book</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Follow</h4>
-      <ul>
-        <li><a href="#">Instagram — @zenalalake</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap footer-bottom">
-    <span>&copy; 2026 Zenala Lake Event Centre. All rights reserved.</span>
-    <span>Lakeside Grounds, Ghana</span>
-  </div>
-</footer>
-
+<footer class="site-footer"><div class="wrap footer-bottom" style="border:0;margin:0;padding:0"><span>© 2026 Zenala</span><a href="enquire.html">Book a visit</a></div></footer>
 <script src="script.js"></script>
 </body>
 </html>

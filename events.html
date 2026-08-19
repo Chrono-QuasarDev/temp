@@ -1,201 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Events — Weddings, Funerals & Corporate Getaways — Zenala</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — Zenala</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <header class="site-header">
   <nav class="nav">
-    <a class="brand" href="index.html" aria-label="Zenala home">
-      <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="49" fill="#15140F"/>
-        <path d="M18,56 C28,36 38,72 50,52 C62,32 72,68 82,48" stroke="#F5F0E4" stroke-width="3.2" fill="none" stroke-linecap="round"/>
-        <path d="M24,66 C33,49 44,80 55,62" stroke="#AD8A44" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.9"/>
-      </svg>
-      <span>
-        <span class="brand-word">ZENALA</span>
-        <span class="brand-sub">LAKE EVENT CENTRE</span>
-      </span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="49" fill="#1a1914"/><path d="M18,56 C28,36 38,72 50,52 C62,32 72,68 82,48" stroke="#F4EFE4" stroke-width="3.2" fill="none"/></svg>
+      <span><span class="brand-word">ZENALA</span><span class="brand-sub">LAKE EVENT CENTRE</span></span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="events.html" aria-current="page">Events</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a class="btn btn-line nav-cta" href="enquire.html">Enquire</a></li>
+      <li><a class="nav-cta" href="enquire.html">Enquire</a></li>
     </ul>
   </nav>
 </header>
-
 <main>
   <section class="hero compact">
-    <div class="hero-scene" aria-hidden="true">
-      <svg viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,90 C220,64 380,106 620,86 C860,66 1000,100 1200,80 C1320,70 1400,76 1440,80 L1440,180 L0,180 Z" fill="#4B6357" opacity="0.9"/>
-        <path d="M0,118 C240,98 420,130 660,112 C900,94 1080,124 1440,108 L1440,180 L0,180 Z" fill="#1E3129"/>
-      </svg>
-    </div>
+    <div class="hero-media"><img src="images/lawn.jpg" alt=""></div>
     <div class="hero-inner">
       <span class="eyebrow">Events</span>
-      <h1 class="h1" style="font-size:clamp(38px,5.5vw,60px); margin-top:18px;">For every gathering, a fitting setting.</h1>
-      <p class="lede" style="max-width:52ch;">Three occasions share the Zenala grounds, and each is planned on its own terms.</p>
+      <h1>For every gathering, a fitting setting.</h1>
     </div>
   </section>
 
-  <!-- WEDDINGS -->
-  <section id="weddings" class="section section-paper">
-    <div class="wrap">
-      <div class="grid-2" style="align-items:center;">
-        <div class="scene" style="aspect-ratio:16/11;">
-          <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="280" fill="#263D33"/>
-            <rect width="400" height="110" y="170" fill="#1B2B24"/>
-            <g stroke="#D9C393" stroke-width="1.6" opacity="0.85" fill="none">
-              <path d="M150,280 L150,170 L250,170 L250,280"/>
-              <path d="M150,170 Q200,110 250,170"/>
-            </g>
-            <g fill="#F5F0E4" opacity="0.5">
-              <circle cx="130" cy="190" r="2"/><circle cx="270" cy="190" r="2"/>
-              <circle cx="110" cy="210" r="2"/><circle cx="290" cy="210" r="2"/>
-            </g>
-          </svg>
-        </div>
-        <div>
-          <span class="eyebrow">01 — Weddings</span>
-          <h2 class="h2 mt-16" style="font-size:clamp(28px,3.4vw,38px);">Vows by the water</h2>
-          <p class="lede mt-16">The ceremony lawn sits where the grounds meet the lake, arranged so every seat faces the water. Receptions move to the pavilion or stay under open sky, depending on the season and the size of your party.</p>
-          <ul class="mt-24" style="display:flex; flex-direction:column; gap:10px;">
-            <li class="lede">— Ceremony lawn with lake-facing arrangement</li>
-            <li class="lede">— Covered pavilion for reception &amp; dining</li>
-            <li class="lede">— Capacity up to 300 guests</li>
-            <li class="lede">— Evening lighting along the shoreline paths</li>
-          </ul>
-          <a href="enquire.html" class="btn btn-line mt-32">Enquire About Weddings</a>
-        </div>
+  <section id="weddings" class="section">
+    <div class="wrap grid-2">
+      <figure class="photo" style="aspect-ratio:16/11"><img src="images/lawn.jpg" alt="Wedding lawn"></figure>
+      <div>
+        <span class="eyebrow">01 — Weddings</span>
+        <h2 class="h2 mt-16" style="font-size:clamp(30px,4vw,42px)">Vows by the water</h2>
+        <p class="lede mt-16">The ceremony lawn sits where the grounds meet the lake. Receptions move to the pavilion or stay under open sky.</p>
+        <ul class="list">
+          <li>Lake-facing ceremony, up to 300 guests</li>
+          <li>Covered pavilion for dining and speeches</li>
+          <li>Evening lighting along the shoreline</li>
+        </ul>
+        <a href="enquire.html?type=Wedding" class="btn btn-line mt-32">Enquire about weddings</a>
       </div>
     </div>
   </section>
 
-  <hr class="hr">
-
-  <!-- FUNERALS -->
-  <section id="funerals" class="section section-soft">
-    <div class="wrap">
-      <div class="grid-2" style="align-items:center;">
-        <div>
-          <span class="eyebrow">02 — Funerals</span>
-          <h2 class="h2 mt-16" style="font-size:clamp(28px,3.4vw,38px);">A calm setting for remembrance</h2>
-          <p class="lede mt-16">Zenala offers private grounds for funerals and memorial gatherings, set apart from the main event paths. The pace is unhurried, the spaces are quiet, and there is room enough for extended family to gather comfortably.</p>
-          <ul class="mt-24" style="display:flex; flex-direction:column; gap:10px;">
-            <li class="lede">— Private, screened section of the grounds</li>
-            <li class="lede">— Seating for family and guests, indoor or shaded</li>
-            <li class="lede">— Quiet rooms available for family before the service</li>
-            <li class="lede">— Support with catering and logistics on request</li>
-          </ul>
-          <a href="enquire.html" class="btn btn-line mt-32">Enquire About Funerals</a>
-        </div>
-        <div class="scene" style="aspect-ratio:16/11;">
-          <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="280" fill="#324A3E"/>
-            <path d="M0,200 C90,190 150,208 240,198 C310,190 350,204 400,196 L400,280 L0,280 Z" fill="#1E3129"/>
-            <g stroke="#F5F0E4" stroke-opacity="0.4" stroke-width="1.2" fill="none">
-              <path d="M120,150 C120,130 140,120 140,100 C140,120 160,130 160,150" />
-              <path d="M100,160 C100,145 115,138 115,122" />
-              <path d="M165,160 C165,145 180,138 180,122" />
-            </g>
-          </svg>
-        </div>
+  <section id="funerals" class="section section-cream">
+    <div class="wrap grid-2">
+      <div>
+        <span class="eyebrow">02 — Funerals</span>
+        <h2 class="h2 mt-16" style="font-size:clamp(30px,4vw,42px)">A calm setting for remembrance</h2>
+        <p class="lede mt-16">Private, screened grounds. Unhurried pacing. Quiet rooms for family before the service. Catering and logistics on request.</p>
+        <a href="enquire.html?type=Funeral" class="btn btn-line mt-32">Enquire about funerals</a>
       </div>
+      <figure class="photo" style="aspect-ratio:16/11"><img src="images/gardens.jpg" alt="Quiet gardens"></figure>
     </div>
   </section>
 
-  <hr class="hr">
-
-  <!-- CORPORATE -->
-  <section id="corporate" class="section section-paper">
+  <section class="section section-cream">
     <div class="wrap">
-      <div class="grid-2" style="align-items:center;">
-        <div class="scene" style="aspect-ratio:16/11;">
-          <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="280" fill="#4B6357"/>
-            <rect width="400" height="90" y="190" fill="#263D33"/>
-            <g stroke="#F5F0E4" stroke-width="1.4" opacity="0.8" fill="none">
-              <rect x="140" y="140" width="120" height="50" rx="2"/>
-              <line x1="160" y1="190" x2="160" y2="210"/>
-              <line x1="240" y1="190" x2="240" y2="210"/>
-            </g>
-          </svg>
-        </div>
-        <div>
-          <span class="eyebrow">03 — Corporate Getaways</span>
-          <h2 class="h2 mt-16" style="font-size:clamp(28px,3.4vw,38px);">A change of setting, not a change of pace</h2>
-          <p class="lede mt-16">For teams that need to think differently, Zenala offers meeting space with the lake as backdrop rather than a screensaver. Retreats, offsites, and team days are arranged with structure when you need it and open space when you don't.</p>
-          <ul class="mt-24" style="display:flex; flex-direction:column; gap:10px;">
-            <li class="lede">— Indoor meeting space with outdoor breakout areas</li>
-            <li class="lede">— Wi-Fi, projection, and power throughout</li>
-            <li class="lede">— Team activity space along the grounds</li>
-            <li class="lede">— Catered lunches and evening dinners on request</li>
-          </ul>
-          <a href="enquire.html" class="btn btn-line mt-32">Enquire About Corporate Getaways</a>
-        </div>
-      </div>
+      <span class="eyebrow">Guide prices</span>
+      <h2 class="h2 mt-16" style="font-size:clamp(28px,3.6vw,42px)">Honest bands, not a menu</h2>
+      <p class="lede mt-16" style="max-width:52ch">Venue hire only. Catering, décor, and entertainment sit with your vendors — or we introduce ours. Final quotes follow a walkthrough.</p>
+      <table class="price-table">
+        <thead><tr><th>Occasion</th><th>Typical size</th><th>From</th></tr></thead>
+        <tbody>
+          <tr><td>Wedding (lawn + pavilion)</td><td>80–300 guests</td><td>GH₵ 28,000</td></tr>
+          <tr><td>Funeral / memorial</td><td>40–200 guests</td><td>GH₵ 12,000</td></tr>
+          <tr><td>Corporate day</td><td>up to 80</td><td>GH₵ 18,000</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Weekdays are kinder. Peak Saturdays in November–December carry a weekend rate. A 30% deposit holds the date.</p>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section-lake">
-    <div class="wrap center" style="padding:20px 0 10px;">
-      <h2 class="h2" style="font-size:clamp(26px,3.4vw,40px); color:var(--paper);">Not sure which fits your occasion?</h2>
-      <p class="lede mt-16" style="color:rgba(245,240,228,.7); max-width:44ch; margin:16px auto 0;">Tell us what you're planning and we'll point you to the right space and dates.</p>
-      <div class="hero-actions" style="justify-content:center; margin-top:28px;">
-        <a href="enquire.html" class="btn btn-primary" style="background:var(--gold-deep); border-color:var(--gold-deep);">Start an Enquiry</a>
+  <section id="corporate" class="section">
+    <div class="wrap grid-2">
+      <figure class="photo" style="aspect-ratio:16/11"><img src="images/pavilion.jpg" alt="Meeting pavilion"></figure>
+      <div>
+        <span class="eyebrow">03 — Corporate</span>
+        <h2 class="h2 mt-16" style="font-size:clamp(30px,4vw,42px)">A change of setting, not a change of pace</h2>
+        <p class="lede mt-16">Indoor meeting space, outdoor breakouts, reliable power and Wi-Fi, catered lunches. Structure when you need it.</p>
+        <a href="enquire.html?type=Corporate%20getaway" class="btn btn-line mt-32">Enquire about corporate</a>
       </div>
     </div>
   </section>
 </main>
-
-<footer class="site-footer">
-  <div class="wrap footer-top">
-    <div class="footer-brand">
-      <span class="brand-word">ZENALA</span>
-      <p>A lakeside event centre for weddings, funerals, and corporate getaways.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="about.html">About Zenala</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Plan</h4>
-      <ul>
-        <li><a href="enquire.html">Enquire &amp; Book</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Follow</h4>
-      <ul>
-        <li><a href="#">Instagram — @zenalalake</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap footer-bottom">
-    <span>&copy; 2026 Zenala Lake Event Centre. All rights reserved.</span>
-    <span>Lakeside Grounds, Ghana</span>
-  </div>
-</footer>
-
+<footer class="site-footer"><div class="wrap footer-bottom" style="border:0;margin:0;padding:0"><span>© 2026 Zenala</span><a href="enquire.html">Enquire</a></div></footer>
 <script src="script.js"></script>
 </body>
 </html>
