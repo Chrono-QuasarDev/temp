@@ -47,7 +47,7 @@ h1,h2,h3,h4,p{margin:0}
   display:inline-flex;align-items:center;gap:10px;
   font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);
 }
-.eyebrow::before{content:"";width:20px;height:1px;background:currentColor}
+.eyebrow::before{display:none}
 
 h1,.h1{font-family:var(--display);font-weight:500;letter-spacing:-.02em;line-height:1.05}
 h2,.h2{font-family:var(--display);font-weight:500;line-height:1.12;letter-spacing:-.01em}
@@ -167,7 +167,9 @@ h3{font-family:var(--display);font-weight:500;line-height:1.2}
     padding-top:14px;
     border-top:1px solid var(--line);
   }
-  .nav-links a.nav-cta{
+  .nav-links a.nav-cta,
+  .site-header.scrolled .nav-cta,
+  .site-header.scrolled .nav-links a.nav-cta{
     display:flex;
     width:100%;
     justify-content:center;
