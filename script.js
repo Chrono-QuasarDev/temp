@@ -41,6 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initCalendar();
   initForm();
   initLightbox();
+  document.querySelectorAll('.video-ph video').forEach(v => {
+    const slot = v.closest('.video-ph');
+    v.addEventListener('loadeddata', () => {
+      if (v.videoWidth) slot.classList.add('has-video');
+    });
+    v.addEventListener('error', () => slot.classList.remove('has-video'));
+  });
 
   const params = new URLSearchParams(location.search);
   const type = document.getElementById('type');

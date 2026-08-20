@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events — Zenala</title>
-  <link rel="stylesheet" href="styles.css?v=5">
+  <title>Events — Zenala Lake Event Centre</title>
+  <meta name="description" content="Parties, fire nights, weddings, memorials, and team days on the Zenala shoreline. If you can gather people, the grounds can hold it.">
+  <link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <nav class="nav">
     <a class="brand" href="index.html" aria-label="Zenala home">
       <img class="brand-logo" src="images/logo-ink.png" alt="Zenala Lake Event Centre">
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -23,105 +25,214 @@
     </ul>
   </nav>
 </header>
-<main>
+
+<main id="main">
   <section class="hero compact">
-    <div class="hero-media"><img src="images/lawn.jpg" alt=""></div>
+    <div class="hero-media video-ph">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="videos/events.mp4" type="video/mp4">
+      </video>
+      <div class="video-ph-hint" aria-hidden="true">
+        <span class="video-ph-play"></span>
+        <strong>Add your film</strong>
+        <span>Save it as <code>videos/events.mp4</code></span>
+      </div>
+    </div>
     <div class="hero-inner">
       <span class="eyebrow">Events</span>
-      <h1>For every gathering, a fitting setting.</h1>
+      <h1>If people can gather, the shore can hold it.</h1>
+      <p class="lede">Parties after dark. Stories by the fire. Vows, farewells, offsites. Zenala is not a hall with three packages — it is a lakeside ground hired for the day you actually need.</p>
     </div>
   </section>
 
-  <section id="weddings" class="section">
-    <div class="wrap grid-2">
-      <figure class="photo" style="aspect-ratio:16/11"><img src="images/lawn.jpg" alt="Wedding lawn"></figure>
+  <nav class="occasion-nav" aria-label="Occasion types">
+    <div class="wrap occasion-nav-inner">
+      <a href="#parties">Parties</a>
+      <a href="#fire">Fire nights</a>
+      <a href="#weddings">Weddings</a>
+      <a href="#funerals">Memorials</a>
+      <a href="#corporate">Teams</a>
+      <a href="#private">Private hire</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="wrap" style="max-width:720px">
+      <span class="eyebrow">How the grounds work</span>
+      <h2 class="h2 mt-16" style="font-size:clamp(28px,3.6vw,42px)">You bring the occasion. We hold the place.</h2>
+      <p class="lede mt-16">Most days here are not a “wedding package” or a “corporate package.” Someone hires the shoreline — lawn, pavilion, fire, rooms — and the day takes the shape it needs. Below are the gatherings we already know well. If yours is not named, it still belongs on the form.</p>
+    </div>
+  </section>
+
+  <!-- PARTIES -->
+  <section id="parties" class="chapter">
+    <div class="chapter-media video-ph">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="videos/parties.mp4" type="video/mp4">
+      </video>
+      <div class="video-ph-hint" aria-hidden="true">
+        <span class="video-ph-play"></span>
+        <strong>Party film</strong>
+        <span><code>videos/parties.mp4</code></span>
+      </div>
+    </div>
+    <div class="chapter-copy">
+      <span class="eyebrow">01 Parties</span>
+      <h2 class="h2 mt-16">Birthdays, after-parties, and the nights that run long.</h2>
+      <p class="lede mt-16">Music on the lawn. Tables in the pavilion. Lights along the water. This is the version of Zenala most people meet first — a private ground that can take a crowd without feeling like a club.</p>
+      <ul class="spec">
+        <li><span>Best for</span> Birthdays, launches, reunions, after-parties</li>
+        <li><span>Guests</span> 40–300, depending on layout</li>
+        <li><span>Held</span> Pavilion, lawn, deck — indoor rain plan</li>
+        <li><span>Hours</span> Afternoon into late evening, by agreement</li>
+      </ul>
+      <a href="enquire.html?type=Party" class="btn btn-primary mt-32">Enquire about a party</a>
+    </div>
+  </section>
+
+  <!-- FIRE -->
+  <section id="fire" class="chapter chapter-flip section-cream">
+    <div class="chapter-media video-ph">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="videos/fire.mp4" type="video/mp4">
+      </video>
+      <div class="video-ph-hint" aria-hidden="true">
+        <span class="video-ph-play"></span>
+        <strong>Fire night film</strong>
+        <span><code>videos/fire.mp4</code></span>
+      </div>
+    </div>
+    <div class="chapter-copy">
+      <span class="eyebrow">02 Fire nights</span>
+      <h2 class="h2 mt-16">Stories by the fire. The lake as the other guest.</h2>
+      <p class="lede mt-16">Smaller, slower evenings — storytelling, acoustic sets, family circles, retreat nights. The fire sits where the lawn meets the dark. No stage plot required. Just enough light to see faces.</p>
+      <ul class="spec">
+        <li><span>Best for</span> Storytelling, song, intimate dinners, retreat evenings</li>
+        <li><span>Guests</span> Usually 15–80</li>
+        <li><span>Held</span> Fire circle, lawn edge, quiet rooms if it turns</li>
+        <li><span>Tone</span> Unamplified unless you ask otherwise</li>
+      </ul>
+      <a href="enquire.html?type=Fire%20night" class="btn btn-line mt-32">Enquire about a fire night</a>
+    </div>
+  </section>
+
+  <!-- WEDDINGS -->
+  <section id="weddings" class="chapter">
+    <div class="chapter-media video-ph">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="videos/weddings.mp4" type="video/mp4">
+      </video>
+      <div class="video-ph-hint" aria-hidden="true">
+        <span class="video-ph-play"></span>
+        <strong>Wedding film</strong>
+        <span><code>videos/weddings.mp4</code></span>
+      </div>
+    </div>
+    <div class="chapter-copy">
+      <span class="eyebrow">03 Weddings</span>
+      <h2 class="h2 mt-16">Vows facing the water. The meal wherever the light is kind.</h2>
+      <p class="lede mt-16">Ceremony on the lawn, reception in the pavilion or under sky. We do not sell a template. We hold the ground, the timing, and one coordinator so the day is not rushed through someone else’s run-of-show.</p>
+      <ul class="spec">
+        <li><span>Best for</span> Ceremonies, receptions, traditional + white wedding days</li>
+        <li><span>Guests</span> Up to 300</li>
+        <li><span>Held</span> Lake-facing lawn, dining pavilion, evening paths</li>
+        <li><span>Note</span> Weekend dates in Nov–Dec go first</li>
+      </ul>
+      <a href="enquire.html?type=Wedding" class="btn btn-line mt-32">Enquire about a wedding</a>
+    </div>
+  </section>
+
+  <!-- MEMORIALS -->
+  <section id="funerals" class="chapter chapter-flip section-cream">
+    <div class="chapter-media video-ph">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="videos/memorials.mp4" type="video/mp4">
+      </video>
+      <div class="video-ph-hint" aria-hidden="true">
+        <span class="video-ph-play"></span>
+        <strong>Memorials</strong>
+        <span><code>videos/memorials.mp4</code> — or leave still</span>
+      </div>
+    </div>
+    <div class="chapter-copy">
+      <span class="eyebrow">04 Memorials</span>
+      <h2 class="h2 mt-16">A screened part of the grounds, on an unhurried clock.</h2>
+      <p class="lede mt-16">Funerals and memorial gatherings sit apart from party paths. Quiet rooms for family. Shade. Space for whoever needs to be there. We will not run this on the same pacing as a Saturday wedding.</p>
+      <ul class="spec">
+        <li><span>Best for</span> Funerals, memorials, thanksgiving services</li>
+        <li><span>Guests</span> 40–200</li>
+        <li><span>Held</span> Private section, indoor or shaded seating</li>
+        <li><span>Support</span> Catering and logistics on request</li>
+      </ul>
+      <a href="enquire.html?type=Funeral" class="btn btn-line mt-32">Enquire about a memorial</a>
+    </div>
+  </section>
+
+  <!-- TEAMS -->
+  <section id="corporate" class="chapter">
+    <div class="chapter-media video-ph">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="videos/teams.mp4" type="video/mp4">
+      </video>
+      <div class="video-ph-hint" aria-hidden="true">
+        <span class="video-ph-play"></span>
+        <strong>Team days</strong>
+        <span><code>videos/teams.mp4</code></span>
+      </div>
+    </div>
+    <div class="chapter-copy">
+      <span class="eyebrow">05 Teams</span>
+      <h2 class="h2 mt-16">Offsites that still get work done.</h2>
+      <p class="lede mt-16">Meeting space, power, Wi-Fi, breakouts on the lawn, lunch in the pavilion. A change of setting — not a day lost to travel theatre.</p>
+      <ul class="spec">
+        <li><span>Best for</span> Offsites, retreats, workshops, board days</li>
+        <li><span>Guests</span> Typically up to 80 in session</li>
+        <li><span>Held</span> Pavilion + outdoor breakouts</li>
+        <li><span>Kit</span> Projection, power, reliable connection</li>
+      </ul>
+      <a href="enquire.html?type=Corporate%20getaway" class="btn btn-line mt-32">Enquire about a team day</a>
+    </div>
+  </section>
+
+  <!-- PRIVATE HIRE -->
+  <section id="private" class="section section-ink">
+    <div class="wrap grid-2" style="align-items:center">
       <div>
-        <span class="eyebrow">01 — Weddings</span>
-        <h2 class="h2 mt-16" style="font-size:clamp(30px,4vw,42px)">Vows by the water</h2>
-        <p class="lede mt-16">The ceremony lawn sits where the grounds meet the lake. Receptions move to the pavilion or stay under open sky.</p>
-        <ul class="list">
-          <li>Lake-facing ceremony, up to 300 guests</li>
-          <li>Covered pavilion for dining and speeches</li>
-          <li>Evening lighting along the shoreline</li>
-        </ul>
-        <a href="enquire.html?type=Wedding" class="btn btn-line mt-32">Enquire about weddings</a>
+        <span class="eyebrow" style="color:var(--gold-2)">06 Private hire</span>
+        <h2 class="h2 mt-16" style="color:#fff;font-size:clamp(28px,3.6vw,44px)">Not on the list? The grounds are still for hire.</h2>
+        <p class="lede mt-16" style="color:rgba(244,239,228,.7)">Naming ceremonies, church camps, film stills, pop-up dinners, brand shoots, family weekends. Tell Ama what you are planning. If the calendar is open and the shore can take it, we will hold the date.</p>
+      </div>
+      <div>
+        <a href="enquire.html?type=Other" class="btn btn-primary">Start with the occasion</a>
+        <p class="note" style="color:rgba(244,239,228,.45);margin-top:16px">Guide hire from GH₵ 12,000. Final quote after a walkthrough. 30% holds the date.</p>
       </div>
     </div>
   </section>
 
-  <section id="funerals" class="section section-cream">
-    <div class="wrap grid-2">
-      <div>
-        <span class="eyebrow">02 — Funerals</span>
-        <h2 class="h2 mt-16" style="font-size:clamp(30px,4vw,42px)">A calm setting for remembrance</h2>
-        <p class="lede mt-16">Private, screened grounds. Unhurried pacing. Quiet rooms for family before the service. Catering and logistics on request.</p>
-        <a href="enquire.html?type=Funeral" class="btn btn-line mt-32">Enquire about funerals</a>
-      </div>
-      <figure class="photo" style="aspect-ratio:16/11"><img src="images/gardens.jpg" alt="Quiet gardens"></figure>
-    </div>
-  </section>
-
-  <section class="section section-cream">
+  <section class="section">
     <div class="wrap">
       <span class="eyebrow">Guide prices</span>
-      <h2 class="h2 mt-16" style="font-size:clamp(28px,3.6vw,42px)">Honest bands, not a menu</h2>
-      <p class="lede mt-16" style="max-width:52ch">Venue hire only. Catering, décor, and entertainment sit with your vendors — or we introduce ours. Final quotes follow a walkthrough.</p>
+      <h2 class="h2 mt-16" style="font-size:clamp(28px,3.6vw,42px)">You hire the grounds. Not a menu.</h2>
+      <p class="lede mt-16" style="max-width:52ch">Venue only. Catering, décor, and sound sit with your vendors — or we introduce ours.</p>
       <table class="price-table">
-        <thead><tr><th>Occasion</th><th>Typical size</th><th>From</th></tr></thead>
+        <thead><tr><th>How the day usually looks</th><th>Typical size</th><th>From</th></tr></thead>
         <tbody>
-          <tr><td>Wedding (lawn + pavilion)</td><td>80–300 guests</td><td>GH₵ 28,000</td></tr>
-          <tr><td>Funeral / memorial</td><td>40–200 guests</td><td>GH₵ 12,000</td></tr>
-          <tr><td>Corporate day</td><td>up to 80</td><td>GH₵ 18,000</td></tr>
+          <tr><td>Fire night / intimate gathering</td><td>15–80</td><td>GH₵ 12,000</td></tr>
+          <tr><td>Party or private hire</td><td>40–300</td><td>GH₵ 18,000</td></tr>
+          <tr><td>Team day</td><td>up to 80</td><td>GH₵ 18,000</td></tr>
+          <tr><td>Wedding (lawn + pavilion)</td><td>80–300</td><td>GH₵ 28,000</td></tr>
+          <tr><td>Funeral / memorial</td><td>40–200</td><td>GH₵ 12,000</td></tr>
         </tbody>
       </table>
-      <p class="note">Weekdays are kinder. Peak Saturdays in November–December carry a weekend rate. A 30% deposit holds the date.</p>
-    </div>
-  </section>
-
-  <section id="corporate" class="section">
-    <div class="wrap grid-2">
-      <figure class="photo" style="aspect-ratio:16/11"><img src="images/pavilion.jpg" alt="Meeting pavilion"></figure>
-      <div>
-        <span class="eyebrow">03 — Corporate</span>
-        <h2 class="h2 mt-16" style="font-size:clamp(30px,4vw,42px)">A change of setting, not a change of pace</h2>
-        <p class="lede mt-16">Indoor meeting space, outdoor breakouts, reliable power and Wi-Fi, catered lunches. Structure when you need it.</p>
-        <a href="enquire.html?type=Corporate%20getaway" class="btn btn-line mt-32">Enquire about corporate</a>
-      </div>
+      <p class="note">Weekdays are kinder. Peak Saturdays in November–December carry a weekend rate.</p>
     </div>
   </section>
 </main>
+
 <footer class="site-footer">
-  <div class="wrap footer-top">
-    <div class="footer-brand">
-      <img class="brand-logo brand-logo-footer" src="images/logo.png" alt="Zenala Lake Event Centre">
-      <p>A lakeside event centre for weddings, funerals, and corporate getaways.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Plan</h4>
-      <ul>
-        <li><a href="enquire.html">Enquire</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Visit</h4>
-      <ul>
-        <li>Lakeside Grounds, Accra Region</li>
-        <li><a href="tel:+233240000000">+233 24 000 0000</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap footer-bottom">
+  <div class="wrap footer-bottom" style="border:0;margin:0;padding:0">
     <span>© 2026 Zenala Lake Event Centre</span>
-    <span>Ghana</span>
+    <a href="enquire.html">Enquire</a>
   </div>
 </footer>
 <script src="script.js"></script>

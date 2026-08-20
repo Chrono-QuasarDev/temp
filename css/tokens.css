@@ -1,0 +1,21 @@
+/* Colours, type, spacing. Change brand tokens here. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap');
+
+:root{
+  --ink:#1a1914;
+  --ink-2:#2c2a24;
+  --cream:#f4efe4;
+  --paper:#faf7f0;
+  --gold:#9a7840;
+  --gold-2:#c4a56a;
+  --lake:#1c3229;
+  --lake-2:#2d4a3d;
+  --stone:#6f695c;
+  --line:rgba(26,25,20,.12);
+  --shadow:0 24px 60px rgba(26,25,20,.12);
+  --display:'Cormorant Garamond', Georgia, serif;
+  --body:'Outfit', system-ui, sans-serif;
+  --wrap:1180px;
+  --gutter:clamp(20px,4.5vw,56px);
+  --ease:cubic-bezier(.22,1,.36,1);
+}
