@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Proposal — Zenala Lake Event Centre</title>
+  <link rel="stylesheet" href="styles.css?v=12">
+  <style>
+    .prop{background:var(--paper)}
+    .prop-kicker{
+      font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:500;
+    }
+    .prop-hero{
+      min-height:100svh;display:flex;align-items:flex-end;
+      background:#11100c;color:var(--cream);position:relative;overflow:hidden;
+    }
+    .prop-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45}
+    .prop-hero .inner{position:relative;z-index:1;padding:0 var(--gutter) 72px;max-width:var(--wrap);margin:0 auto;width:100%}
+    .prop-hero h1{color:#fff;font-size:clamp(40px,6vw,72px);max-width:16ch;margin:18px 0 16px}
+    .page-block{padding:clamp(72px,10vw,120px) 0}
+    .page-block + .page-block{border-top:1px solid var(--line)}
+
+    .browser{
+      background:#1a1914;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 24px 60px rgba(26,25,20,.18);
+      margin-top:28px;
+    }
+    .browser-bar{
+      display:flex;align-items:center;gap:12px;
+      padding:12px 16px;
+      background:#11100c;
+    }
+    .browser-dots{display:flex;gap:6px}
+    .browser-dots i{width:9px;height:9px;border-radius:50%;display:block;background:#3a3832}
+    .browser-dots i:nth-child(1){background:#c45c4a}
+    .browser-dots i:nth-child(2){background:#c4a56a}
+    .browser-dots i:nth-child(3){background:#5a7a62}
+    .browser-url{
+      flex:1;background:#2a2822;color:rgba(244,239,228,.7);
+      font-size:12px;letter-spacing:.02em;
+      padding:6px 14px;border-radius:999px;
+    }
+    .browser-stage{
+      position:relative;
+      width:17cm;
+      height:12.04cm;
+      max-width:100%;
+      background:
+        linear-gradient(180deg, rgba(26,25,20,.04), rgba(26,25,20,.08)),
+        repeating-linear-gradient(135deg, #f4efe4 0 12px, #eee6d3 12px 24px);
+      display:flex;align-items:center;justify-content:center;
+      color:var(--stone);
+    }
+    .browser-stage.has-img{background:#1a1914}
+    .browser-stage.has-img img{width:100%;height:100%;object-fit:cover}
+    .browser-hint{
+      text-align:center;padding:24px;
+    }
+    .browser-hint strong{
+      display:block;font-family:var(--display);font-size:22px;font-weight:500;color:var(--ink);margin-bottom:6px;
+    }
+    .browser-hint span{font-size:13px}
+
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+    .why-card{background:#fff;border:1px solid var(--line);padding:24px;border-radius:4px}
+    .why-card b{display:block;font-family:var(--display);font-size:36px;font-weight:500;color:var(--ink);line-height:1}
+    .why-card p{margin-top:10px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--stone)}
+    @media (max-width:800px){.why-grid{grid-template-columns:1fr}}
+
+    .timeline{display:flex;flex-direction:column;gap:0;margin-top:32px}
+    .tl{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
+    .tl strong{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+    .price-row{display:flex;justify-content:space-between;gap:24px;padding:22px 0;border-top:1px solid var(--line);align-items:baseline}
+    .price-row h3{font-size:26px}
+  </style>
+</head>
+<body class="prop">
+<a class="skip" href="#structure">Skip to structure</a>
+
+<section class="prop-hero">
+  <img src="images/hero.jpg" alt="">
+  <div class="inner">
+    <p class="prop-kicker">Website proposal · Prepared for Zenala Lake Event Centre</p>
+    <h1>A website that shows Zenala the way it deserves to be seen.</h1>
+    <p class="lede" style="color:rgba(244,239,228,.82);max-width:48ch">A calm, image-led site that turns admiration into enquiries — and a look at what it will look like on launch day.</p>
+    <p class="note" style="color:rgba(244,239,228,.55);margin-top:28px">Prepared by QuasarDev · August 2026</p>
+  </div>
+</section>
+
+<section class="page-block">
+  <div class="wrap">
+    <p class="prop-kicker">Why now</p>
+    <h2 class="h2 mt-16" style="font-size:clamp(32px,4vw,48px);max-width:18ch">Right now, Zenala’s first impression lives on borrowed ground.</h2>
+    <div class="grid-2 mt-32" style="align-items:start">
+      <p class="lede">Zenala has already opened its shoreline to weddings, farewells, and corporate retreats. The setting is doing its job. But people still discover it on Instagram — a platform Zenala doesn’t own and can’t fully control.</p>
+      <p class="lede">Someone searching for a wedding venue, a memorial ground, or a retreat usually decides in seconds. Today that decision happens on a feed built for scrolling, not booking. No dedicated way to check a date. No room to show the grounds. No permanent address for the name once a post scrolls away.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><b>Seconds</b><p>To form a first impression online</p></div>
+      <div class="why-card"><b>3</b><p>Distinct audiences Zenala serves</p></div>
+      <div class="why-card"><b>1</b><p>Home for the brand, owned outright</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="page-block section-cream">
+  <div class="wrap">
+    <p class="prop-kicker">What it will look like</p>
+    <h2 class="h2 mt-16" style="font-size:clamp(32px,4vw,48px);max-width:18ch">The homepage — the first thing every visitor sees.</h2>
+    <p class="lede mt-16" style="max-width:56ch">Built around the same shoreline photography Zenala already has, with one clear statement of what the venue offers and a direct path to enquire.</p>
+    <div class="browser">
+      <div class="browser-bar">
+        <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="browser-url">zenalalake.com</div>
+      </div>
+      <div class="browser-stage has-img">
+        <img src="images/hero.jpg" alt="Homepage hero as it will appear">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-block" id="structure">
+  <div class="wrap">
+    <p class="prop-kicker">The structure</p>
+    <h2 class="h2 mt-16" style="font-size:clamp(32px,4vw,48px);max-width:16ch">Six pages, each doing one job well.</h2>
+    <p class="lede mt-16" style="max-width:54ch">Rather than one long page trying to speak to everyone at once, the site is organised so each visitor finds their answer quickly — whoever they are and whatever they’re planning.</p>
+  </div>
+</section>
+
+<section class="page-block section-cream">
+  <div class="wrap grid-2" style="align-items:start">
+    <div>
+      <p class="prop-kicker">01 Home</p>
+      <h2 class="h2 mt-16" style="font-size:clamp(28px,3.4vw,40px);max-width:16ch">The lake and grounds at a glance.</h2>
+      <p class="lede mt-16">Introduces what Zenala offers and points straight to the enquiry form. No clutter. One path forward.</p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar">
+        <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="browser-url">zenalalake.com</div>
+      </div>
+      <div class="browser-stage">
+        <div class="browser-hint">
+          <strong>Homepage</strong>
+          <span>Add screenshot here</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-block">
+  <div class="wrap grid-2" style="align-items:start">
+    <div class="browser">
+      <div class="browser-bar">
+        <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="browser-url">zenalalake.com/about</div>
+      </div>
+      <div class="browser-stage">
+        <div class="browser-hint">
+          <strong>About</strong>
+          <span>Add screenshot here</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="prop-kicker">02 About</p>
+      <h2 class="h2 mt-16" style="font-size:clamp(28px,3.4vw,40px);max-width:16ch">The story behind the shoreline.</h2>
+      <p class="lede mt-16">The setting, the philosophy, and what a guest can expect from the day — told in one voice, not a brochure list.</p>
+    </div>
+  </div>
+</section>
+
+<section class="page-block section-cream">
+  <div class="wrap grid-2" style="align-items:start">
+    <div>
+      <p class="prop-kicker">03 Events</p>
+      <h2 class="h2 mt-16" style="font-size:clamp(28px,3.4vw,40px);max-width:16ch">Weddings, funerals, corporate — each in its own tone.</h2>
+      <p class="lede mt-16">Split by occasion, with its own imagery, what’s included, and an enquiry that starts in the right voice. A wedding enquiry is not a corporate one.</p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar">
+        <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="browser-url">zenalalake.com/events</div>
+      </div>
+      <div class="browser-stage">
+        <div class="browser-hint">
+          <strong>Events</strong>
+          <span>Add screenshot here</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-block">
+  <div class="wrap grid-2" style="align-items:start">
+    <div class="browser">
+      <div class="browser-bar">
+        <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="browser-url">zenalalake.com/gallery</div>
+      </div>
+      <div class="browser-stage">
+        <div class="browser-hint">
+          <strong>Gallery</strong>
+          <span>Add screenshot here</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="prop-kicker">04 Gallery</p>
+      <h2 class="h2 mt-16" style="font-size:clamp(28px,3.4vw,40px);max-width:16ch">A paced set of photographs.</h2>
+      <p class="lede mt-16">The grounds by day, by evening, and across occasions. Built so people want to see it in person — not to rush the scroll.</p>
+    </div>
+  </div>
+</section>
+
+<section class="page-block section-cream">
+  <div class="wrap grid-2" style="align-items:start">
+    <div>
+      <p class="prop-kicker">05 Enquire &amp; Book</p>
+      <h2 class="h2 mt-16" style="font-size:clamp(28px,3.4vw,40px);max-width:16ch">A short form. Then a reply within a day.</h2>
+      <p class="lede mt-16">Event type, date, and guest count, sent straight to the Zenala team. WhatsApp sits beside it for dates that cannot wait.</p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar">
+        <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="browser-url">zenalalake.com/enquire</div>
+      </div>
+      <div class="browser-stage">
+        <div class="browser-hint">
+          <strong>Enquire</strong>
+          <span>Add screenshot here</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-block">
+  <div class="wrap grid-2" style="align-items:start">
+    <div class="browser">
+      <div class="browser-bar">
+        <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="browser-url">zenalalake.com/contact</div>
+      </div>
+      <div class="browser-stage">
+        <div class="browser-hint">
+          <strong>Contact</strong>
+          <span>Add screenshot here</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="prop-kicker">06 Contact</p>
+      <h2 class="h2 mt-16" style="font-size:clamp(28px,3.4vw,40px);max-width:16ch">How to get there, and who answers.</h2>
+      <p class="lede mt-16">Directions, phone, WhatsApp, and social — laid out cleanly. Tours Tuesday to Sunday. Events any day, by booking.</p>
+    </div>
+  </div>
+</section>
+
+<section class="page-block section-cream">
+  <div class="wrap">
+    <p class="prop-kicker">Delivery</p>
+    <h2 class="h2 mt-16" style="font-size:clamp(32px,4vw,48px)">Built and launched within one week.</h2>
+    <div class="timeline">
+      <div class="tl"><strong>Day 1</strong><p class="lede">Kickoff call, content and image collection, sitemap sign-off.</p></div>
+      <div class="tl"><strong>Days 2–3</strong><p class="lede">Design of the homepage and page templates in Zenala’s visual language.</p></div>
+      <div class="tl"><strong>Days 4–5</strong><p class="lede">Build of all six pages, the booking enquiry form, and responsive testing.</p></div>
+      <div class="tl"><strong>Day 6</strong><p class="lede">Review round with Zenala and revisions based on feedback.</p></div>
+      <div class="tl"><strong>Day 7</strong><p class="lede">Final polish, launch, and handover.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="page-block">
+  <div class="wrap">
+    <p class="prop-kicker">Investment</p>
+    <h2 class="h2 mt-16" style="font-size:clamp(32px,4vw,48px)">What it costs to bring Zenala online.</h2>
+    <div class="price-row mt-32">
+      <div>
+        <h3>Zenala Signature Website</h3>
+        <p class="lede">Six pages, fully responsive, booking enquiry form, curated gallery, and basic local SEO — delivered within one week. 50% to begin, 50% on delivery.</p>
+      </div>
+      <strong style="font-family:var(--display);font-size:32px;white-space:nowrap">GHS 8,500</strong>
+    </div>
+    <div class="price-row">
+      <div>
+        <h3>Domain &amp; hosting setup</h3>
+        <p class="lede">First-year hosting, domain registration, and SSL. Optional.</p>
+      </div>
+      <strong style="font-family:var(--display);font-size:28px;white-space:nowrap">GHS 900</strong>
+    </div>
+    <div class="price-row">
+      <div>
+        <h3>Content &amp; photo styling</h3>
+        <p class="lede">Shot-list guidance and light retouching for gallery images. Optional.</p>
+      </div>
+      <strong style="font-family:var(--display);font-size:28px;white-space:nowrap">GHS 1,200</strong>
+    </div>
+    <p class="note">The future booking-and-operations app is not included. It would be scoped separately when Zenala is ready — early estimates start around GHS 25,000.</p>
+  </div>
+</section>
+
+<section class="page-block section-ink">
+  <div class="wrap">
+    <p class="prop-kicker" style="color:var(--gold-2)">Next steps</p>
+    <h2 class="h2 mt-16" style="font-size:clamp(32px,4vw,48px);color:#fff;max-width:16ch">Zenala already has the setting and the story.</h2>
+    <p class="lede mt-16" style="color:rgba(244,239,228,.7);max-width:46ch">A website of the same calibre is the natural next step — the piece that turns admiration into enquiries, and enquiries into events on the calendar.</p>
+    <p class="lede mt-16" style="color:rgba(244,239,228,.55)">QuasarDev · Web Design &amp; Development · Accra, Ghana</p>
+  </div>
+</section>
+</body>
+</html>
