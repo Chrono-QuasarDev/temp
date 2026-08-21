@@ -52,7 +52,7 @@
 .site-header.scrolled .brand-word{color:var(--ink)}
 .site-header.scrolled .brand-sub{color:var(--stone)}
 .nav-links{display:flex;align-items:center;gap:22px;flex:none}
-.nav-links a{font-size:13px;font-weight:400;color:rgba(250,247,240,.92);position:relative;padding:4px 0;transition:color .4s}
+.nav-links a{font-size:16px;font-weight:400;color:rgba(250,247,240,.92);position:relative;padding:4px 0;transition:color .4s}
 .nav-links a[aria-current="page"]{color:var(--gold-2)}
 .site-header.scrolled .nav-links a{color:var(--ink)}
 .site-header.scrolled .nav-links a[aria-current="page"]{color:var(--gold)}
